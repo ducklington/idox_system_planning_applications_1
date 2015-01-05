@@ -17,7 +17,8 @@ import sys
 import gc
 
 from scraperwiki import utils
-scrapemark = scraperwiki.utils.swimport("scrapemark_09")
+
+scrapemark = scraperwiki.utils("scrapemark_09")
 util = scraperwiki.utils.swimport("utility_library")
 base = scraperwiki.utils.swimport("openlylocal_base_scraper")
 
