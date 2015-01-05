@@ -21,7 +21,7 @@ util = scraperwiki.utils.swimport("utility_library")
 base = scraperwiki.utils.swimport("openlylocal_base_scraper")
 
 systems = {
-    'Rushmoor': 'RushmoorScraper',
+    'WestOxon': 'WestOxonScraper',
      }
 
 class IdoxScraper(base.DateScraper):
@@ -271,9 +271,9 @@ class MerthyrTydfilScraper(IdoxScraper):
     MIN_DAYS = 28 # min number of days to get when gathering current ids
     search_url = 'http://publicaccess.merthyr.gov.uk/online-applications/search.do?action=advanced'
 
-class RushmoorScraper(IdoxScraper):
+class WestOxonScraper(IdoxScraper):
 
-    search_url = 'http://publicaccess.rushmoor.gov.uk/online-applications/search.do?action=advanced'
+    search_url = 'http://publicaccess.westoxon.gov.uk/online-applications/search.do?action=advanced'
 
 class SouthamptonScraper(IdoxScraper): # hangs - no page returned??????????
 
