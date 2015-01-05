@@ -16,7 +16,7 @@ import urlparse
 import sys
 import gc
 
-from scraperwiki import scrapemark_09
+from scraperwiki import utils
 scrapemark = scraperwiki.utils.swimport("scrapemark_09")
 util = scraperwiki.utils.swimport("utility_library")
 base = scraperwiki.utils.swimport("openlylocal_base_scraper")
